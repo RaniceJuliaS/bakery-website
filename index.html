@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<style>
+   /* div {
+        width :200px;
+        height: 200px;
+        background-color: navy;
+        animation-name: box;
+        animation-duration: 2s;
+    }
+    @keyframes box{
+        from {background-color: navy;}
+        to{background-color: darkorange;}
+    }
+    div{
+        width: 200px ;
+        height: 200px;
+        position: relative;
+        background-color: yellow;
+        animation-name: graphics;
+        animation-duration: 5s;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes graphics{
+        0%{ background-color: yellow;left:  0px; top: 0px;}
+        25%{ background-color: crimson; left: 200px; top: 0px;}
+        50%{ background-color : fuchsia; left:200px; top: 200px;}
+        75%{background-color: tomato;left: 0px;  top: 200px;}
+        100%{background-color: blueviolet;left: 0px; top: 0px;}
+    }*/
+    div{
+        width: 200px ;
+        height: 200px;
+        background-color: forestgreen;
+        transition: linear;
+    }
+    div:hover{
+        width: 400px;
+    }
+</style>
+<body>
+    <form>
+        <h2>Enter your details</h1>
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Username"><br>
+        <label>Password</label>
+        <input type="password" id="Password" placeholder="Password"><br>
+        <label>Age</label>
+        <input type="number" id="Age" placeholder="Age"><br>
+        <label>Date</label>
+        <input type="Date" placeholder="Date"><br>
+        <label>time</label>
+        <input type="Time" placeholder="Time"><br>
+        <p>Courses available</p>
+        <input type="radio" name="dept"
+        <label>CSA</label><br>
+        <input type="radio" name="dept"
+        <label>BCA</label><br>
+        <input type="radio" name="dept"
+        <label>IT</label><br
+        <p>Interest</p>
+        <input type="checkbox"
+        <label>Cricket</label>
+        <br>
+        <input type="checkbox"
+        <label>Football</label>
+        <br>
+        <input type="checkbox"
+        <label>Hockey</label><br>
+        <button>Submit</button><br>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll.No</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>01</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>01</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>01</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </form>
+    <h3>Welcome to my page!</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Rn1wPv2tWEczg1IX_Q3zOWUJrtrHvIyzEw&s">
+    <br>
+    <h5>This is cat! Meow!.......</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta beatae tenetur ea enim fuga. Eius provident eaque repellat deleniti nisi animi quidem, nostrum consectetur, itaque natus veritatis, illo tenetur. Inventore voluptate hic, pariatur animi maiores sapiente corrupti, ratione nihil, omnis et sequi. Hic dolor quam asperiores esse laborum ad officiis dolorem, neque quasi omnis minus. Ab vero tenetur, atque vitae perspiciatis rem provident vel laboriosam animi libero? Voluptatem provident rerum iste ex repellendus deserunt vel ut ratione quis optio, molestiae quisquam veniam temporibus error veritatis dolorem, eius enim velit nulla beatae fugiat. Sint aut quia consequuntur facilis, error officiis commodi.</p>
+    <div></div>
+    <P id="demo">HELLO!</P>
+    <button onclick="document.getElementById('demo').innerHTML='STAY POSITIVE'">CLICK ME!</button>
+    <p id="add"></p>
+    <button onclick="myfunction()">Click me</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <h3>Turn on to light the bulb!</h3>
+    <button onclick="document.getElementById('myImage').src='https://static.vecteezy.com/system/resources/thumbnails/006/757/532/small_2x/light-bulb-icon-free-vector.jpg'">OFF</button>
+    <img id="myImage" src="https://static.vecteezy.com/system/resources/thumbnails/006/757/532/small_2x/light-bulb-icon-free-vector.jpg" style="width: 150px;">
+    <button onclick="document.getElementById('myImage').src='https://cdn.vectorstock.com/i/500p/96/94/light-bulb-cartoon-isolated-vector-31809694.jpg'">ON</button>
+    <script>
+        let x=4;
+        y=2;
+        z=x+y;
+        document.getElementById("add").innerHTML="The value of z is" +z;
+        alert("Welcome to my page!");
+        function myfunction(){
+            document.getElementById("demo1").innerHTML="Hii";
+            document.getElementById("demo2").innerHTML="Hello";
+        }
+    </script>
+</body>
+</html>

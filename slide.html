@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+    <style>
+        .slider{
+            display: flex;
+            width: 1200px;
+            transition: transform 1s;
+        }
+        .slides{
+            flex-shrink: 0;
+            width: 1200px;
+        }
+        .bar{
+            cursor: pointer;
+        }
+        .slides img{
+            object-fit: cover;
+            width: 1200px;
+        }
+        input[name="slide-radio"] {
+      display: none;
+    }
+        #slide1:checked ~ .slider {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slider {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slider {
+  transform: translateX(-200%);
+}
+
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <input type="radio" id="slide1" checked>
+        <input type="radio" id="slide2">
+        <input type="radio" id="slide3">
+    
+    <div class="slider">
+        <div class="slides">
+            <img src="https://img.freepik.com/free-photo/closeup-shot-purple-flower_181624-25863.jpg?ga=GA1.1.651854501.1746956577&semt=ais_items_boosted&w=740">
+        </div>
+        <div class="slides">
+            <img src="https://img.freepik.com/free-photo/flower-group-objects-blossom-plant-nature_1122-2314.jpg?ga=GA1.1.651854501.1746956577&semt=ais_items_boosted&w=740">
+        </div>
+        <div class="slides">
+            <img src="https://img.freepik.com/free-photo/floral-composition-with-elegant-style_23-2147897497.jpg?ga=GA1.1.651854501.1746956577&semt=ais_items_boosted&w=740">
+        </div>
+    </div>
+    <div class="navigation">
+        <label for="slide1" class="bar"></label>
+        <label for="slide2" class="bar"></label>
+        <label for="slide3" class="bar"></label>
+    </div>
+    </div>
+</body>
+</html>

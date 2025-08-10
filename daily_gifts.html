@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily_gifts</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-photo/pastel-pink-vignette-concrete-textured-background_53876-129734.jpg?t=st=1746987436~exp=1746991036~hmac=ac3115ba0d198871c58f478045fab3ff93c443672b7b2981f82ba7664c5c8d2a&w=1380);
+        }
+        h1{
+            font-family: Georgia,serif;
+            text-align: center;
+        }
+        .open-box{
+            display: none;
+        }
+        #gift{
+            padding-left: 400px;
+            animation: bounce 3s infinite;
+        }
+        button{
+            color: white;
+            border: 40px;
+            font-size: 20px;
+            border-radius: 30px;
+            height: 45px;
+            width: 150px;
+            background-color: rgb(234, 161, 184);
+            padding: 10px 20px;
+            margin-left: 555px;
+            text-decoration: none;
+            font-family: Verdana, sans-serif;
+        }
+        .gift-message{
+            text-align: center;
+            color: black;
+            position: absolute;
+            top: 60%;
+            font-size: 13px;
+            display: none;
+            padding-left: 600px;
+            animation: bounce 3s infinite;
+            font-family: Verdana, sans-serif;
+        }
+        @keyframes bounce{
+            0%,100%{transform: translateY(0);}
+            50%{transform:translateY(-15px)}
+        }
+        
+
+    </style>
+    </head>
+<body>
+    <h1>Open the box to get your daily gifts!</h1>
+    <img id="gift" src="box-close.png"  width="450px" height="450px">
+    <button onclick="openGift()">CLICK ME</button>
+    <div class="gift-message" id="message">🎉 Surprise!<br> You've unlocked 10% off<br> on all cupcakes today! 🧁</div>
+<script>
+    function openGift() {
+      document.getElementById('gift').src = 'box-open.png';
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
