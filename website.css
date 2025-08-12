@@ -1,0 +1,80 @@
+.logo{
+
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+    background-color: rgb(234, 161, 184);
+    border-right: 1px solid goldenrod;
+    padding:5px;
+}
+button{
+    float: right;
+    align-items: end;
+    color: white;
+    margin-top: 30px;
+    margin-left: 100px;
+    border: 40px;
+    border-radius: 20px;
+    height: 40px;
+    background-color: rgb(234, 161, 184);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+.navbar {
+    background-color: white;
+    padding-top: 40px;
+    font-family: Verdana, sans-serif;
+}
+.navbar a {
+        color: goldenrod;
+        text-decoration: none;
+        font-family: Verdana, sans-serif;
+        margin: 20px;
+        
+        }
+.navbar a:hover{
+        color: rgb(54, 151, 178);
+    }
+
+.flex-container{
+    display: flex;
+    border: 1px solid goldenrod;
+    margin: 20px;
+    background-color: white;
+}
+h1{
+    float: left;
+    margin-top: 130px;
+    margin-left: 50px;
+    font-family: Georgia,serif;
+}
+.dropdown {
+          
+    display:inline-block;
+      }
+
+.dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: white;
+          border: 1px solid goldenrod;
+      }
+
+.dropdown-content a {
+          color: goldenrod;
+          font-family: Verdana, sans-serif;
+          display: block;
+      }
+.dropdown:hover .dropdown-content {
+          display: block;
+          color:  rgb(54, 151, 178);
+}
+
+body{
+    background-image: url(https://img.freepik.com/free-vector/world-chocolate-day-hand-drawn-flat-background_23-2149453947.jpg?t=st=1746956870~exp=1746960470~hmac=8fcef90b053459779137881c41834414da4b0616f4a6de69fc78bd219b932b5e&w=1380);
+    background-size: cover;
+    background-clip: border-box;
+}
+
